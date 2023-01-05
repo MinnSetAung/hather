@@ -1,0 +1,100 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    /* background-color:#16151d; */
+    width:415px;
+    height:500px;
+}
+#noti{
+    /* margin: 70px 100px 0 850px; */
+    z-index:5;
+}
+#noti .background{
+    width:100%;
+    height:500px;
+    background-color:#fff;
+    padding:5px 5px;
+    border-radius:20px;
+}
+#noti .background h1{
+    font-size:2rem;
+}
+#noti .background .notibox{
+    width:auto;
+    height:430px;
+    /* background-color:red; */
+    margin-top:5px;
+    margin-bottom:20px;
+    position:fixed;
+    overflow:hidden;
+}
+#noti .background .notibox:hover{
+    overflow-y:scroll;
+}
+#noti .background:hover .notibox::-webkit-scrollbar{
+    width:8px;
+}
+#noti .background:hover .notibox::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px #fff;
+    background:#fff;
+}
+#noti .background:hover .notibox::-webkit-scrollbar-thumb {
+    background-color: rgba(22, 21, 29, 0.5);
+    outline: 1px solid rgba(22, 21, 29, 0.5);
+    background:rgba(22, 21, 29, 0.5);
+}
+#noti .background .notibox .noti{
+    width:auto;
+    height:auto;
+    overflow:auto;
+    margin:10px 0;
+    padding:10px 5px;
+    /* background-color:#16151d; */
+    opacity: 1;
+    /* background-color: #fff; */
+}
+#noti .background .notibox .noti:hover{
+    background: rgba(22, 21, 29, 0.1);
+}
+#noti .background .notibox .noti a{
+    color:#000;
+    text-decoration:none;
+    display:flex;
+}
+#noti .background .notibox .noti  a .notiimgbox{
+    width:80px;
+    height:80px;
+    /* background-color:cyan; */
+    margin:5px;
+}
+#noti .background .notibox .noti  a .notiimgbox img{
+    width:65px;
+    height:65px;
+    border-radius:5px;
+    background-color: #16151d;
+    margin-left:8px;
+}
+#noti .background .notibox .noti  a .notiinfobox{
+    width:300px;
+    height:auto;
+    /* background-color:red; */
+    padding:0 10px;
+}
+#noti .background .notibox .noti  a .notiinfobox ul{
+    list-style-type:none;
+}
+#noti .background .notibox .noti  a .notiinfobox ul li{
+    float:left;
+}
+#noti .background .notibox .noti  a .notiinfobox ul .upload{
+    margin:0 5px;
+}
+#noti .background .notibox .noti  a .notiinfobox ul li p{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow:hidden;
+}

@@ -1,0 +1,257 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.Maindiv {
+    width: 220px;
+    height: 93%;
+    background-color: rgb(255, 0, 0);
+
+    position: fixed;
+    top:0;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.Maindiv h2 {
+    font-size: 1.3rem;
+    padding: 2px;
+    font-weight: 100;
+    cursor: default;
+}
+
+.Maindiv .Menu{
+    font-size: 1rem;
+    padding-left: 20px;
+}
+.Maindiv .Menu a{
+    color:#000;
+    text-decoration:none;
+}
+.Maindiv .Menu ul li{
+    font-size: 1rem;
+    padding-left: 20px;
+    list-style: none;
+}
+
+.Menu ul li h4 {
+    padding: 5px 5px;
+}
+
+.Menu .fa-house {
+    padding: 10px 10px;
+    padding-right: 30px;
+}
+
+.Menu .fa-record-vinyl {
+    padding: 10px 10px;
+    padding-right: 30px;
+}
+
+.Menu .fa-music {
+    padding: 10px 10px;
+    padding-right: 30px;
+}
+
+.Menu .fa-calendar-days {
+    padding: 10px 10px;
+    padding-right: 30px;
+}
+
+.Menu .fa-masks-theater {
+    padding: 10px 10px;
+    padding-right: 22px;
+}
+
+.Menu .fa-radio {
+    padding: 10px 10px;
+    padding-right: 26px;
+}
+
+.Menu .fa-clock {
+    padding: 10px 10px;
+    padding-right: 28px;
+}
+
+.Menu .fa-heart-circle-plus {
+    padding: 10px 10px;
+    padding-right: 27px;
+}
+
+.Menu .fa-folder-open {
+    padding: 10px 10px;
+    padding-right: 28px;
+}
+
+.Menu .fa-thumbs-up {
+    padding: 10px 10px;
+    padding-right: 28px;
+}
+
+.Page {
+    width: 83.9%;
+    height: 9%;
+    background-color: blueviolet;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 220px;
+    top:0;
+    position: fixed;
+    cursor: pointer;
+}
+.Page .fa-magnifying-glass {
+    font-size: 1.6rem;
+}
+
+.Page .fa-chevron-left{
+    font-size: 1.3rem;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.Page .fa-chevron-right {
+    font-size: 1.3rem;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.Page .searchbar {
+    width: 600px;
+    height: 40px;
+}
+
+.Page .fa-gear {
+    font-size: 1.6rem;
+}
+
+.Page .noti a .fa-bell {
+    font-size: 1.8rem;
+    color:#000;
+}
+.Page .noti a:focus .fa-bell{
+    color:#fff;
+}
+.Page .noti{
+    width:65px;
+    height:65px;
+    /* background-color: aliceblue; */
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.Page .noti a:focus iframe{
+    display:block;
+}
+.Page a iframe{
+    position: absolute;
+    right:100px;
+    top:60px;
+    border-radius:25px;
+    border:none;
+    z-index:2;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    display:none;
+}
+.Page img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+body{
+    background-color:#16151d;
+    font-family: 'Montserrat', sans-serif;
+}
+#happy{
+    margin-left:220px;
+    margin-top: 9vh;
+}
+#happy .background{
+    width:100%;
+    height:84vh;
+    background-color:#60efdb;
+    padding:0 5px 0 15px;
+
+    overflow:hidden;
+}
+#happy .background:hover{
+    overflow-y:scroll;
+}
+#happy .background:hover::-webkit-scrollbar{
+    width:8px;
+}
+#happy .background:hover::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px #fff;
+    background:#fff;
+}
+#happy .background:hover::-webkit-scrollbar-thumb {
+    background-color: rgba(22, 21, 29, 0.5);
+    outline: 1px solid rgba(22, 21, 29, 0.5);
+    background:rgba(22, 21, 29, 0.5);
+}
+#happy .background h1{
+    font-size:2rem;
+    margin:20px 10px;
+}
+#happy .background .happycgbox{
+    width:auto;
+    height:auto;
+    /* background-color:azure; */
+
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    margin-bottom:20px;
+}
+#happy .background .happycgbox .happycgplaybox{
+    width:170px;
+    height:240px;
+    /* background-color:aqua; */
+    border-radius:5px;
+    margin:5px;
+}
+#happy .background .happycgbox .happycgplaybox a{
+    text-transform: capitalize;
+    text-decoration: none;
+    color:#000;
+}
+#happy .background .happycgbox .happycgplaybox a:hover .happycgimgbox img{
+    transition: 0.1s;
+    opacity: 0.8;
+    background-color:#16151d;
+}
+#happy .background .happycgbox .happycgplaybox a:hover .happycginfobox ul{
+    color:#0003c7;
+    /* color:#fd465d; */
+    /* color:#feb396; */
+}
+#happy .background .happycgbox .happycgplaybox .happycgimgbox{
+    width:170px;
+    height:170px;
+    background-color:#16151d;
+    border-radius:5px;
+    overflow:hidden;
+    /* margin:5px; */
+}
+#happy .background .happycgbox .happycgplaybox .happycgimgbox img{
+    width:170px;
+    height:170px;
+    /* margin:5px; */
+    /* background-color:#16151d; */
+    /* border-radius:5px; */
+    opacity:1;
+    transition: 0.1s;
+}
+#happy .background .happycgbox .happycgplaybox .happycginfobox{
+    width:160px;
+    height:60px;
+    /* background-color: #c5e7f1; */
+    margin:5px;
+}
+#happy .background .happycgbox .happycgplaybox .happycginfobox ul{
+    list-style:none;
+}
